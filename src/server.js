@@ -23,4 +23,4 @@ app.use(express.json());
 
 app.use("/subscribers", subscribersRouter);
 
-app.listen(3333, () => console.log("Backend started on port 3333"));
+app.listen(3333, () => console.log("Back-end started on port 3333! 🚀"));
