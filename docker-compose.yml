@@ -11,7 +11,7 @@ services:
     ports:
       - 27017:27017
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=mongopassw
-      - MONGODB_USER=root
-      - MONGODB_PASS=mongopassw
+      - MONGO_INITDB_ROOT_USERNAME=${process.env.MONGO_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${process.env.MONGO_PASSWORD}
+      - MONGODB_USER=${process.env.MONGO_USERNAME}
+      - MONGODB_PASS=${process.env.MONGO_PASSWORD}
